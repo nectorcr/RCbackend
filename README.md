@@ -57,6 +57,7 @@ proyecto.
 
   ● Uso Eloquent o QueryBuilder.
   
+  
 ## EJECUCIÓN DEL PROYECTO
 
 Tener en cuenta los siguientes programas instalados:
@@ -67,30 +68,32 @@ Tener en cuenta los siguientes programas instalados:
 
 Consideraciones dentro del proyecto para la ejecución de comandos necesarios, seeders y migraciones:
 
-  ● Configurar el archivo ".env": dentro del directorio principal del proyecto, según el nombre de la base de datos que se utilice.
+1.- Configurar el archivo ".env": dentro del directorio principal del proyecto, según el nombre de la base de datos que se utilice.
     
-  ● En la terminal ejecutar los siguientes comandos paso a paso:
+2.- En la terminal ejecutar los siguientes comandos paso a paso:
     
     - npm install
     - npm run dev
-    - php artisan key:generate
-    - php artisan migrate
-    - php artisan db:seed
-    - php artisan migrate:fresh --sedd
+    - php artisan key:generate (Genera la llave virtual)
+    - php artisan migrate (Obtiene todas las tablas para la DB)
+    - php artisan db:seed (Obtiene todos los seeders para la DB)
+    - php artisan migrate:fresh --seed (Refresca las tablas y seeders para la DB)
 
-  ● Para la ejecución del proyecto en la terminal utilice el siguiente comando: php artisan serve
+3.- Para la ejecución del proyecto en la terminal utilice el siguiente comando: 
+  
+    - php artisan serve
+
 
 ## DOCUMENTACIÓN DE SEEDERS
 
-
-Usuarios (email): 
+Usuarios (email):
+ 
     - admin.user@test.com (Encargado del manejo de usuarios y roles).
     - admin.file@test.com (Encargado del manejo de archivos).
     - user1@test.com (Cliente).
     - user2@test.com (Cliente).
 
 Contraseña: capital1234 (para todos los usuarios indicados anteriormente).
-
 
 ## License
 
